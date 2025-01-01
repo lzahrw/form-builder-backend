@@ -1,5 +1,3 @@
-// src/main/java/com/example/formbuilder/dto/UpdateFormDTO.java
-
 package com.example.formbuilder.dto;
 
 import lombok.*;

@@ -1,5 +1,3 @@
-// src/main/java/com/example/formbuilder/exception/GlobalExceptionHandler.java
-
 package com.example.formbuilder.exception;
 
 import org.springframework.http.HttpStatus;

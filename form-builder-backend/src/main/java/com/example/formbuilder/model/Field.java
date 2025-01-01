@@ -1,5 +1,3 @@
-// src/main/java/com/example/formbuilder/model/Field.java
-
 package com.example.formbuilder.model;
 
 import jakarta.persistence.*;
@@ -18,13 +16,13 @@ public class Field {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String fieldIdentifier; // Unique across the form
+    private String fieldIdentifier;
 
     private String name;
 
     private String label;
 
-    private String type; // e.g., Text, Number, Boolean, Date
+    private String type;
 
     private String defaultValue;
 

@@ -1,5 +1,3 @@
-// src/main/java/com/example/formbuilder/model/Form.java
-
 package com.example.formbuilder.model;
 
 import jakarta.persistence.*;
@@ -25,7 +23,7 @@ public class Form {
 
     private Boolean isPublished = false;
 
-    @Builder.Default // Ensures fields is initialized when using @Builder
+    @Builder.Default
     @OneToMany(mappedBy = "form", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private Set<Field> fields = new HashSet<>();
 
@@ -33,7 +31,7 @@ public class Form {
 
     private String submitUrl;
 
-    // Helper methods to manage bidirectional relationship
+
     public void addField(Field field) {
         fields.add(field);
         field.setForm(this);
